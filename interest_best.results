@@ -1,0 +1,80 @@
+Examine datafile 'interest.train' gave the following results:
+Number of Features: 8
+InputFormat       : Columns
+
+Phase 1: Reading Datafile: interest.train
+Start:          0 @ Mon Mar  8 14:39:15 2021
+Finished:     185 @ Mon Mar  8 14:39:15 2021
+Calculating Entropy         Mon Mar  8 14:39:15 2021
+Lines of data     : 185
+DB Entropy        : 2.4149634
+Number of Classes : 10
+
+Feats	Vals	InfoGain	GainRatio
+    1    110	1.7762320	0.28478038
+    2     95	1.8280282	0.31742977
+    3      2	0.51039656	0.59064156
+    4     37	1.2581872	0.33943159
+    5    124	1.7972353	0.28796815
+    6    162	2.3609094	0.32636389
+    7    138	2.2361017	0.33411367
+    8    146	2.2323588	0.32572262
+
+Preparation took 0 seconds, 0 milliseconds and 868 microseconds
+Feature Permutation based on GainRatio/Values :
+< 3, 4, 2, 1, 7, 5, 8, 6 >
+Phase 2: Building multi index on Datafile: interest.train
+Start:          0 @ Mon Mar  8 14:39:15 2021
+Finished:     185 @ Mon Mar  8 14:39:15 2021
+
+Phase 3: Learning from Datafile: interest.train
+Start:          0 @ Mon Mar  8 14:39:15 2021
+Finished:     185 @ Mon Mar  8 14:39:15 2021
+
+Size of InstanceBase = 1269 Nodes, (50760 bytes), 22.95 % compression
+Learning took 0 seconds, 1 milliseconds and 160 microseconds
+Examine datafile 'interest.test' gave the following results:
+Number of Features: 8
+InputFormat       : Columns
+
+
+Starting to test, Testfile: interest.test
+Writing output in:          interest.test.IB1.M.gr.k2.out
+Algorithm     : IB1
+Global metric : Value Difference, Prestored matrix
+Deviant Feature Metrics:(none)
+Size of value-matrix[1] = 48 Bytes 
+Size of value-matrix[2] = 48 Bytes 
+Size of value-matrix[3] = 104 Bytes 
+Size of value-matrix[4] = 48 Bytes 
+Size of value-matrix[5] = 48 Bytes 
+Size of value-matrix[6] = 48 Bytes 
+Size of value-matrix[7] = 48 Bytes 
+Size of value-matrix[8] = 48 Bytes 
+Total Size of value-matrices 440 Bytes 
+
+Weighting     : GainRatio
+Feature 1	 : 0.284780383777673
+Feature 2	 : 0.317429768141562
+Feature 3	 : 0.590641559801169
+Feature 4	 : 0.339431585180453
+Feature 5	 : 0.287968152258661
+Feature 6	 : 0.326363894857725
+Feature 7	 : 0.334113673990966
+Feature 8	 : 0.325722615513577
+
+Tested:      1 @ Mon Mar  8 14:39:15 2021
+Tested:      2 @ Mon Mar  8 14:39:15 2021
+Tested:      3 @ Mon Mar  8 14:39:15 2021
+Tested:      4 @ Mon Mar  8 14:39:15 2021
+Tested:      5 @ Mon Mar  8 14:39:15 2021
+Tested:      6 @ Mon Mar  8 14:39:15 2021
+Tested:      7 @ Mon Mar  8 14:39:15 2021
+Tested:      8 @ Mon Mar  8 14:39:15 2021
+Tested:      9 @ Mon Mar  8 14:39:15 2021
+Tested:     10 @ Mon Mar  8 14:39:15 2021
+Ready:      93 @ Mon Mar  8 14:39:15 2021
+Seconds taken: 0.0033 (28233.15 p/s)
+
+overall accuracy:        0.645161  (60/93), of which 4 exact matches 
+There were 12 ties of which 6 (50.00%) were correctly resolved

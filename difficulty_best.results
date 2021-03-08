@@ -1,0 +1,80 @@
+Examine datafile 'difficulty.train' gave the following results:
+Number of Features: 8
+InputFormat       : Columns
+
+Phase 1: Reading Datafile: difficulty.train
+Start:          0 @ Mon Mar  8 14:38:07 2021
+Finished:      46 @ Mon Mar  8 14:38:07 2021
+Calculating Entropy         Mon Mar  8 14:38:07 2021
+Lines of data     : 46
+DB Entropy        : 2.1794710
+Number of Classes : 6
+
+Feats	Vals	InfoGain	GainRatio
+    1     38	1.8857802	0.36667538
+    2     31	1.7087865	0.36656864
+    3      2	0.33879631	0.35085297
+    4     23	1.3746981	0.34924673
+    5     38	1.7988237	0.35274951
+    6     43	2.0761039	0.38612856
+    7     40	1.9891473	0.38232221
+    8     44	2.0761039	0.38303122
+
+Preparation took 0 seconds, 0 milliseconds and 287 microseconds
+Feature Permutation based on GainRatio/Values :
+< 3, 4, 2, 1, 7, 5, 6, 8 >
+Phase 2: Building multi index on Datafile: difficulty.train
+Start:          0 @ Mon Mar  8 14:38:07 2021
+Finished:      46 @ Mon Mar  8 14:38:07 2021
+
+Phase 3: Learning from Datafile: difficulty.train
+Start:          0 @ Mon Mar  8 14:38:07 2021
+Finished:      46 @ Mon Mar  8 14:38:07 2021
+
+Size of InstanceBase = 346 Nodes, (13840 bytes), 16.43 % compression
+Learning took 0 seconds, 0 milliseconds and 275 microseconds
+Examine datafile 'difficulty.test' gave the following results:
+Number of Features: 8
+InputFormat       : Columns
+
+
+Starting to test, Testfile: difficulty.test
+Writing output in:          difficulty.test.IB1.M.gr.k1.out
+Algorithm     : IB1
+Global metric : Value Difference, Prestored matrix
+Deviant Feature Metrics:(none)
+Size of value-matrix[1] = 48 Bytes 
+Size of value-matrix[2] = 48 Bytes 
+Size of value-matrix[3] = 104 Bytes 
+Size of value-matrix[4] = 48 Bytes 
+Size of value-matrix[5] = 48 Bytes 
+Size of value-matrix[6] = 48 Bytes 
+Size of value-matrix[7] = 48 Bytes 
+Size of value-matrix[8] = 48 Bytes 
+Total Size of value-matrices 440 Bytes 
+
+Weighting     : GainRatio
+Feature 1	 : 0.366675383462424
+Feature 2	 : 0.366568638163504
+Feature 3	 : 0.350852973477044
+Feature 4	 : 0.349246729833708
+Feature 5	 : 0.352749508518941
+Feature 6	 : 0.386128564177846
+Feature 7	 : 0.382322207115371
+Feature 8	 : 0.383031221932945
+
+Tested:      1 @ Mon Mar  8 14:38:07 2021
+Tested:      2 @ Mon Mar  8 14:38:07 2021
+Tested:      3 @ Mon Mar  8 14:38:07 2021
+Tested:      4 @ Mon Mar  8 14:38:07 2021
+Tested:      5 @ Mon Mar  8 14:38:07 2021
+Tested:      6 @ Mon Mar  8 14:38:07 2021
+Tested:      7 @ Mon Mar  8 14:38:07 2021
+Tested:      8 @ Mon Mar  8 14:38:07 2021
+Tested:      9 @ Mon Mar  8 14:38:07 2021
+Tested:     10 @ Mon Mar  8 14:38:07 2021
+Ready:      23 @ Mon Mar  8 14:38:07 2021
+Seconds taken: 0.0004 (65155.81 p/s)
+
+overall accuracy:        0.521739  (12/23)
+There were 2 ties of which 1 (50.00%) were correctly resolved

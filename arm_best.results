@@ -1,0 +1,81 @@
+Examine datafile 'arm.train' gave the following results:
+Number of Features: 8
+InputFormat       : Columns
+
+Phase 1: Reading Datafile: arm.train
+Start:          0 @ Mon Mar  8 14:36:00 2021
+Finished:     266 @ Mon Mar  8 14:36:00 2021
+Calculating Entropy         Mon Mar  8 14:36:00 2021
+Lines of data     : 266
+DB Entropy        : 1.3030920
+Number of Classes : 7
+
+Feats	Vals	InfoGain	GainRatio
+    1    130	0.98329875	0.15434419
+    2     83	1.0020903	0.19317625
+    3      2	0.17228034	0.17844981
+    4    107	0.82454534	0.14813983
+    5    164	1.0226739	0.14827736
+    6    209	1.2955732	0.17154302
+    7    199	1.2312145	0.16590659
+    8    230	1.2065711	0.15684613
+
+Preparation took 0 seconds, 1 milliseconds and 104 microseconds
+Feature Permutation based on GainRatio/Values :
+< 3, 2, 4, 1, 5, 7, 6, 8 >
+Phase 2: Building multi index on Datafile: arm.train
+Start:          0 @ Mon Mar  8 14:36:00 2021
+Finished:     266 @ Mon Mar  8 14:36:00 2021
+
+Phase 3: Learning from Datafile: arm.train
+Start:          0 @ Mon Mar  8 14:36:00 2021
+Finished:     266 @ Mon Mar  8 14:36:00 2021
+
+Size of InstanceBase = 1865 Nodes, (74600 bytes), 20.30 % compression
+Learning took 0 seconds, 1 milliseconds and 608 microseconds
+Examine datafile 'arm.test' gave the following results:
+Number of Features: 8
+InputFormat       : Columns
+
+
+Starting to test, Testfile: arm.test
+Writing output in:          arm.test.IB1.M.gr.k2.out
+Algorithm     : IB1
+Global metric : Value Difference, Prestored matrix
+Deviant Feature Metrics:(none)
+Size of value-matrix[1] = 48 Bytes 
+Size of value-matrix[2] = 48 Bytes 
+Size of value-matrix[3] = 104 Bytes 
+Size of value-matrix[4] = 48 Bytes 
+Size of value-matrix[5] = 48 Bytes 
+Size of value-matrix[6] = 48 Bytes 
+Size of value-matrix[7] = 48 Bytes 
+Size of value-matrix[8] = 48 Bytes 
+Total Size of value-matrices 440 Bytes 
+
+Weighting     : GainRatio
+Feature 1	 : 0.154344192431814
+Feature 2	 : 0.193176247844191
+Feature 3	 : 0.178449810179140
+Feature 4	 : 0.148139825386773
+Feature 5	 : 0.148277356721956
+Feature 6	 : 0.171543023487825
+Feature 7	 : 0.165906588323343
+Feature 8	 : 0.156846127937784
+
+Tested:      1 @ Mon Mar  8 14:36:00 2021
+Tested:      2 @ Mon Mar  8 14:36:00 2021
+Tested:      3 @ Mon Mar  8 14:36:00 2021
+Tested:      4 @ Mon Mar  8 14:36:00 2021
+Tested:      5 @ Mon Mar  8 14:36:00 2021
+Tested:      6 @ Mon Mar  8 14:36:00 2021
+Tested:      7 @ Mon Mar  8 14:36:00 2021
+Tested:      8 @ Mon Mar  8 14:36:00 2021
+Tested:      9 @ Mon Mar  8 14:36:00 2021
+Tested:     10 @ Mon Mar  8 14:36:00 2021
+Tested:    100 @ Mon Mar  8 14:36:00 2021
+Ready:     133 @ Mon Mar  8 14:36:00 2021
+Seconds taken: 0.0063 (21101.06 p/s)
+
+overall accuracy:        0.849624  (113/133), of which 11 exact matches 
+There were 9 ties of which 6 (66.67%) were correctly resolved
