@@ -1,0 +1,68 @@
+Examine datafile 'arm.train' gave the following results:
+Number of Features: 8
+InputFormat       : Columns
+
+Phase 1: Reading Datafile: arm.train
+Start:          0 @ Mon Mar  8 14:24:56 2021
+Finished:     266 @ Mon Mar  8 14:24:56 2021
+Calculating Entropy         Mon Mar  8 14:24:56 2021
+Lines of data     : 266
+DB Entropy        : 1.3030920
+Number of Classes : 7
+
+Feats	Vals	InfoGain	GainRatio
+    1    130	0.98329875	0.15434419
+    2     83	1.0020903	0.19317625
+    3      2	0.17228034	0.17844981
+    4    107	0.82454534	0.14813983
+    5    164	1.0226739	0.14827736
+    6    209	1.2955732	0.17154302
+    7    199	1.2312145	0.16590659
+    8    230	1.2065711	0.15684613
+
+Preparation took 0 seconds, 1 milliseconds and 129 microseconds
+Feature Permutation based on GainRatio :
+< 2, 3, 6, 7, 8, 1, 5, 4 >
+Phase 2: Building multi index on Datafile: arm.train
+Start:          0 @ Mon Mar  8 14:24:56 2021
+Finished:     266 @ Mon Mar  8 14:24:56 2021
+
+Phase 3: Learning from Datafile: arm.train
+Start:          0 @ Mon Mar  8 14:24:56 2021
+Finished:     266 @ Mon Mar  8 14:24:56 2021
+
+Size of InstanceBase = 72 Nodes, (2880 bytes), 96.92 % compression
+Learning took 0 seconds, 1 milliseconds and 791 microseconds
+Examine datafile 'arm.test' gave the following results:
+Number of Features: 8
+InputFormat       : Columns
+
+
+Starting to test, Testfile: arm.test
+Writing output in:          arm.test.IGTree.gr.out
+Algorithm     : IGTree
+Weighting     : GainRatio
+Feature 1	 : 0.154344192431814
+Feature 2	 : 0.193176247844191
+Feature 3	 : 0.178449810179140
+Feature 4	 : 0.148139825386773
+Feature 5	 : 0.148277356721956
+Feature 6	 : 0.171543023487825
+Feature 7	 : 0.165906588323343
+Feature 8	 : 0.156846127937784
+
+Tested:      1 @ Mon Mar  8 14:24:56 2021
+Tested:      2 @ Mon Mar  8 14:24:56 2021
+Tested:      3 @ Mon Mar  8 14:24:56 2021
+Tested:      4 @ Mon Mar  8 14:24:56 2021
+Tested:      5 @ Mon Mar  8 14:24:56 2021
+Tested:      6 @ Mon Mar  8 14:24:56 2021
+Tested:      7 @ Mon Mar  8 14:24:56 2021
+Tested:      8 @ Mon Mar  8 14:24:56 2021
+Tested:      9 @ Mon Mar  8 14:24:56 2021
+Tested:     10 @ Mon Mar  8 14:24:56 2021
+Tested:    100 @ Mon Mar  8 14:24:56 2021
+Ready:     133 @ Mon Mar  8 14:24:56 2021
+Seconds taken: 0.0006 (239208.63 p/s)
+
+overall accuracy:        0.804511  (107/133)
